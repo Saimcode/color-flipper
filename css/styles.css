@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Ubuntu;
+  background-color: #f1f5f8;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes MovingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes MovingGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.422);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.422);
+  z-index: 3;
+  background: -webkit-gradient(linear, right top, left top, from(#d14b4b), color-stop(#d1a24b), color-stop(#d0d14b), color-stop(#7ed14b), color-stop(#4bd177), color-stop(#4bd1b2), color-stop(#4bb5d1), color-stop(#4b7ad1), color-stop(#7b4bd1), color-stop(#ce4bd1), color-stop(#d14b8d), to(#d14b4b));
+  background: linear-gradient(270deg, #d14b4b, #d1a24b, #d0d14b, #7ed14b, #4bd177, #4bd1b2, #4bb5d1, #4b7ad1, #7b4bd1, #ce4bd1, #d14b8d, #d14b4b);
+  background-size: 2400% 2400%;
+  -webkit-animation: MovingGradient 15s ease infinite;
+          animation: MovingGradient 15s ease infinite;
+  color: white;
+}
+
+nav .nav-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1170px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  height: 5rem;
+  z-index: 3 !important;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+nav a:hover {
+  color: #343434;
+}
+
+main {
+  padding: 0 15% 0 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 5rem);
+}
+
+main .copyright {
+  position: absolute;
+  display: block;
+  margin: auto;
+  bottom: 5%;
+  overflow: hidden;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  cursor: pointer;
+  color: #555;
+}
+
+main .copyright a {
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+main .copyright:hover {
+  color: #343434;
+  border-bottom: 3px solid #343434;
+}
+
+main .container {
+  margin: auto;
+  padding: 1.6rem 2.7rem;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  max-width: 1170px;
+  background-color: rgba(0, 0, 0, 0.397);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.422);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.422);
+  z-index: 2;
+}
+
+main .container h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+main .container h2 span {
+  color: white;
+  text-transform: uppercase;
+}
+
+main .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+main .container .buttons button {
+  background: -webkit-gradient(linear, right top, left top, from(#d14b4b), color-stop(#d1a24b), color-stop(#d0d14b), color-stop(#7ed14b), color-stop(#4bd177), color-stop(#4bd1b2), color-stop(#4bb5d1), color-stop(#4b7ad1), color-stop(#7b4bd1), color-stop(#ce4bd1), color-stop(#d14b8d), to(#d14b4b));
+  background: linear-gradient(270deg, #d14b4b, #d1a24b, #d0d14b, #7ed14b, #4bd177, #4bd1b2, #4bb5d1, #4b7ad1, #7b4bd1, #ce4bd1, #d14b8d, #d14b4b);
+  background-size: 2400% 2400%;
+  -webkit-animation: MovingGradient 15s ease infinite;
+          animation: MovingGradient 15s ease infinite;
+  border: none;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 55px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/*# sourceMappingURL=styles.css.map */
